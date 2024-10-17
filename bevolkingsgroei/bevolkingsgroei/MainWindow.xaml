@@ -1,0 +1,22 @@
+﻿<Window x:Class="bevolkingsgroei.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bevolkingsgroei"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="textboxLand" HorizontalAlignment="Left" Margin="260,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxBevolking" HorizontalAlignment="Left" Margin="260,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.03,-0.247"/>
+        <TextBox x:Name="textboxGroei" HorizontalAlignment="Left" Margin="260,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Land" Content="Land:" HorizontalAlignment="Left" Margin="137,103,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.549,0.548" Height="27" Width="49" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <Label x:Name="bevolking" Content="Huidige bevolking:" HorizontalAlignment="Left" Margin="75,143,0,0" VerticalAlignment="Top" Width="111" HorizontalContentAlignment="Right"/>
+        <Label x:Name="groeiPercentage" Content="Groeipercentage:" HorizontalAlignment="Left" Margin="85,189,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Right"/>
+        <Button x:Name="berekenen" Content="Berekenen" HorizontalAlignment="Left" Margin="455,111,0,0" VerticalAlignment="Top" Width="61" Click="berekenen_Click"/>
+        <Button x:Name="wissen" Content="Wissen" HorizontalAlignment="Left" Margin="455,155,0,0" VerticalAlignment="Top" Width="61" Click="wissen_Click"/>
+        <TextBox x:Name="resultaat" HorizontalAlignment="Left" Margin="137,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="379" Height="130"/>
+        <Button x:Name="afsluiten" Content="Afsluiten" HorizontalAlignment="Left" Margin="455,192,0,0" VerticalAlignment="Top" Width="61" Click="afsluiten_Click"/>
+
+    </Grid>
+</Window>
